@@ -1,16 +1,24 @@
 package model;
 
 public class Trainer {
+	private int id;
 	private String name;
 	private String email;
 	private String title;
 	private String tier;
-	public Trainer(String name, String email, String title, String tier) {
+	public Trainer(int id, String name, String email, String title, String tier) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.title = title;
 		this.tier = tier;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -36,5 +44,6 @@ public class Trainer {
 	public void setTier(String tier) {
 		this.tier = tier;
 	}
+
 	
 }

@@ -1,18 +1,27 @@
 package model;
 
 public class TraineePanel {
+	private int id;
 	private String traineeName;
 	private String date;
 	private String panelist;
 	private String panelSatus;
 	private String repeatTopics;
-	public TraineePanel(String traineeName, String date, String panelist, String panelSatus, String repeatTopics) {
+	public TraineePanel(int id, String traineeName, String date, String panelist, String panelSatus,
+			String repeatTopics) {
 		super();
+		this.id = id;
 		this.traineeName = traineeName;
 		this.date = date;
 		this.panelist = panelist;
 		this.panelSatus = panelSatus;
 		this.repeatTopics = repeatTopics;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getTraineeName() {
 		return traineeName;
