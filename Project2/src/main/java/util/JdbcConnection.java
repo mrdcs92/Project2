@@ -15,14 +15,13 @@ public class JdbcConnection {
 	}
 
 	public static Connection getConnection() {
-
 		if (conn == null) {
 			try {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 
 				Properties props = new Properties();
 				FileInputStream in;
-				in = new FileInputStream("D:/MyRepo/AngJSWebApp/AngJSWebApp/src/main/resources/connection.properties");
+				in = new FileInputStream("C:/Users/brianrembecky/Documents/Project2/Project2/src/main\\resources\\connection.properties");
 				props.load(in);
 
 				String url = props.getProperty("url");
@@ -32,13 +31,9 @@ public class JdbcConnection {
 				conn = DriverManager.getConnection(url, username, password);
 
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} finally {
-
 			}
 		}
 		return conn;
 	}
-
 }
