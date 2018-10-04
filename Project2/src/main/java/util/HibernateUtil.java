@@ -7,8 +7,6 @@ public class HibernateUtil {
 	
 	private static SessionFactory sessionFactory;
 	
-
-	
 	private HibernateUtil() {}
 	
 	public static SessionFactory getSessionFactory() {
