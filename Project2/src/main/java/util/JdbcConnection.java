@@ -21,7 +21,7 @@ public class JdbcConnection {
 
 				Properties props = new Properties();
 				FileInputStream in;
-				in = new FileInputStream("C:/Users/brianrembecky/Documents/Project2/Project2/src/main\\resources\\connection.properties");
+				in = new FileInputStream("C:/Users/brianrembecky/Documents/Project2/Project2/src/main/resources/connection.properties");
 				props.load(in);
 
 				String url = props.getProperty("url");
