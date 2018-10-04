@@ -9,7 +9,7 @@ public class HibernateUtil {
 
 	private HibernateUtil() {
 	}
-
+	
 	public static SessionFactory getSessionFactory() {
 		if (sessionFactory == null) {
 			Configuration cfg = new Configuration();
