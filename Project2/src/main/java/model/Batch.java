@@ -1,6 +1,7 @@
 package model;
 
 public class Batch {
+	private int id;
 	private String trainingName;
 	private String triningType;
 	private String skillType;
@@ -11,9 +12,10 @@ public class Batch {
 	private String endDate;
 	private int goodGrade;
 	private int passingGrade;
-	public Batch(String trainingName, String triningType, String skillType, String trainer, String coTrainer,
+	public Batch(int id, String trainingName, String triningType, String skillType, String trainer, String coTrainer,
 			String location, String startDate, String endDate, int goodGrade, int passingGrade) {
 		super();
+		this.id = id;
 		this.trainingName = trainingName;
 		this.triningType = triningType;
 		this.skillType = skillType;
@@ -24,6 +26,12 @@ public class Batch {
 		this.endDate = endDate;
 		this.goodGrade = goodGrade;
 		this.passingGrade = passingGrade;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getTrainingName() {
 		return trainingName;
