@@ -1,16 +1,24 @@
 package model;
 
 public class QualityAuditTrainee {
+	private int id;
 	private String name;
 	private String comment;
 	private String individualFeedback;
 	private String notes;
-	public QualityAuditTrainee(String name, String comment, String individualFeedback, String notes) {
+	public QualityAuditTrainee(int id, String name, String comment, String individualFeedback, String notes) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.comment = comment;
 		this.individualFeedback = individualFeedback;
 		this.notes = notes;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

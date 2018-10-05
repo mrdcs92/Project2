@@ -3,19 +3,27 @@ package model;
 import java.util.ArrayList;
 
 public class QualityAuditWeek {
+	private int id;
 	private String name;
 	private ArrayList<QualityAuditTrainee> trainees;
 	private String categoriesCovered = null;
 	private String overallFeedBack;
 	private String overallNotes;
-	public QualityAuditWeek(String name, ArrayList<QualityAuditTrainee> trainees, String categoriesCovered,
+	public QualityAuditWeek(int id, String name, ArrayList<QualityAuditTrainee> trainees, String categoriesCovered,
 			String overallFeedBack, String overallNotes) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.trainees = trainees;
 		this.categoriesCovered = categoriesCovered;
 		this.overallFeedBack = overallFeedBack;
 		this.overallNotes = overallNotes;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

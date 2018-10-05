@@ -2,20 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3705" started-at="2018-10-05T03:03:29Z" finished-at="2018-10-05T03:03:32Z">
+
+  <suite started-at="2018-10-04T20:04:21Z" name="Default suite" finished-at="2018-10-04T20:04:34Z" duration-ms="12656">
+
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3705" started-at="2018-10-05T03:03:29Z" finished-at="2018-10-05T03:03:32Z">
-      <class name="basictests.BarChartTest">
-        <test-method status="PASS" signature="setUpDriverAndPage()[pri:0, instance:basictests.BarChartTest@239963d8]" name="setUpDriverAndPage" is-config="true" duration-ms="7402" started-at="2018-10-05T03:03:21Z" finished-at="2018-10-05T03:03:29Z">
+
+    <test started-at="2018-10-04T20:04:21Z" name="Default test" finished-at="2018-10-04T20:04:34Z" duration-ms="12656">
+      <class name="cuke.NGCucumberRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" started-at="2018-10-04T20:04:21Z" name="setUpClass" finished-at="2018-10-04T20:04:21Z" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpDriverAndPage -->
-        <test-method status="PASS" signature="checkWV()[pri:0, instance:basictests.BarChartTest@239963d8]" name="checkWV" duration-ms="3685" started-at="2018-10-05T03:03:29Z" finished-at="2018-10-05T03:03:32Z">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" started-at="2018-10-04T20:04:21Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-04T20:04:33Z" duration-ms="12066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NavBar - Home]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkWV -->
-        <test-method status="PASS" signature="cleanup()[pri:0, instance:basictests.BarChartTest@239963d8]" name="cleanup" is-config="true" duration-ms="686" started-at="2018-10-05T03:03:32Z" finished-at="2018-10-05T03:03:33Z">
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" started-at="2018-10-04T20:04:34Z" name="tearDownClass" finished-at="2018-10-04T20:04:34Z" duration-ms="10" status="PASS">
+
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
