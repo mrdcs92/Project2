@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+
   <suite started-at="2018-10-04T20:04:21Z" name="Default suite" finished-at="2018-10-04T20:04:34Z" duration-ms="12656">
+
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
+
     <test started-at="2018-10-04T20:04:21Z" name="Default test" finished-at="2018-10-04T20:04:34Z" duration-ms="12656">
       <class name="cuke.NGCucumberRunner">
         <test-method is-config="true" signature="setUpClass()[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" started-at="2018-10-04T20:04:21Z" name="setUpClass" finished-at="2018-10-04T20:04:21Z" duration-ms="420" status="PASS">
@@ -26,10 +26,11 @@
           </reporter-output>
         </test-method> <!-- feature -->
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cuke.NGCucumberRunner@3cc1435c]" started-at="2018-10-04T20:04:34Z" name="tearDownClass" finished-at="2018-10-04T20:04:34Z" duration-ms="10" status="PASS">
+
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cuke.NGCucumberRunner -->
+        </test-method> <!-- cleanup -->
+      </class> <!-- basictests.BarChartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
