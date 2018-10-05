@@ -1,6 +1,7 @@
-package basictests;
+package testngs;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -60,6 +61,29 @@ public class BarChartTest {
 //	        System.out.println(e.getText());
 //	    }
 		Assert.assertEquals("Adam Ranieri 2018-08-29 0 0 0 1 Good", tablerows.get(0).getText());
+	}
+	
+	@Test void checkVA() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement barChart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("select[ng-model='selectedBarState']")));
+		
+		barChart.click();
+		barChart.sendKeys(Keys.ARROW_DOWN);
+		barChart.sendKeys(Keys.ENTER);
+		
+		List <WebElement> tablerows = driver.findElements(By.cssSelector("tr[ng-repeat='label in stackedBarLabels']"));
+		
+		List<String> manNames = new ArrayList<String>();
+		manNames.add("Patrick Walsh 2018-08-19 0 0 0 1 Good");
+		manNames.add("Fred Belotte 2018-08-12 0 6 12 1 Good");
+		manNames.add("Mehrab Rahman 2018-08-13 0 7 16 0 Good");
+		manNames.add("Yuvaraj Damodaran 2018-07-22 0 3 12 2 Good");
+		manNames.add("Richard Orr 2018-07-10 7 2 7 0 Average");
+		manNames.add("Peter Alagna 2018-08-22 0 0 0 12 Good");
+		
+		for (int i = 0; i < tablerows.size(); i++) {
+			Assert.assertEquals(manNames.get(i), tablerows.get(i).getText());
+		}
 	}
 	
 	@AfterSuite
