@@ -1,6 +1,3 @@
-
-
-
 package cucumba;
 
 import java.io.File;
@@ -20,13 +17,13 @@ import cucumber.api.java.en.When;
 import pages.Login;
 
 public class footerTest {
-	
+
 	public static Login login;
 	public static WebDriver driver;
-	
+
 	@BeforeSuite
 	@Given("^the user is on the home page$")
-	public static void login() throws Throwable{
+	public static void login() throws Throwable {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
@@ -36,41 +33,26 @@ public class footerTest {
 		login.getPasswordField().sendKeys("*6Ak4-&kXnNTfTh6");
 		login.getLoginButton().click();
 	}
-	
-	
-	
-	
-	
-	
+
 	@When("^the user clicks revature$")
-	public void testRevature() throws Throwable{
+	public void testRevature() throws Throwable {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
-		
+
 		WebElement we = driver.findElement(By.xpath("/html/body/footer/div/div/div/div[2]/a[3]"));
 		we.click();
 	}
-	
+
 	@Then("^the user is directed to the revature home page$")
 	public void revatureHomePage() throws Throwable {
 		Assert.assertEquals(driver.getCurrentUrl(), "https://revature.com/");
 	}
-	
-	
-	
-	
-	
+
 	@AfterSuite
 	public static void closeDriver() {
 		driver.close();
 		driver.quit();
 	}
-	
-	
+
 }
-
-
-
-
-
