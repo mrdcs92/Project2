@@ -1,6 +1,7 @@
 package cuke;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,11 +38,12 @@ public class LoginTest {
 
 	@When("^The user clicks the login button$")
 	public void the_user_clicks_the_login_button() throws Throwable {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		login.getLoginButton().click();
 	}
 
 	@Then("^The URL of the page is \"([^\"]*)\"$")
-	public void the_header_of_the_page_is(String arg1) throws Throwable {
+	public void the_url_of_the_page_is(String arg1) throws Throwable {
 		Assert.assertEquals(driver.getCurrentUrl(), arg1);
 		driver.quit();
 	}

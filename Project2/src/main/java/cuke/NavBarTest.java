@@ -1,10 +1,11 @@
 package cuke;
 
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
@@ -31,17 +32,95 @@ public class NavBarTest {
 		login.getPasswordField().sendKeys("*6Ak4-&kXnNTfTh6");
 		login.getLoginButton().click();
 	}
-
+	
 	@When("^The user clicks on the Home button$")
-	public void the_user_clicks_on_the_Home_button() throws Throwable {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		nav.getHomeButton().click();
+	public void the_user_clicks_on_the_Home_button() throws Throwable {	
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getHomeButton().click();
 	}
 
 	@Then("^The user should be on the homepage$")
 	public void the_user_should_be_on_the_homepage() throws Throwable {
-		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/home");
-		driver.close();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/home");
+	    driver.close();
+	}
+	
+	@When("^The user clicks on the Manage Batch button$")
+	public void the_user_clicks_on_the_Manage_Batch_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getManageBatchButton().click();
+	}
+
+	@Then("^The user should be on the Manage Batch page$")
+	public void the_user_should_be_on_the_Manage_Batch_page() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/manage"));
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/manage");
+	    driver.close();
+	}
+	
+	@When("^The user clicks on the Assess Batch button$")
+	public void the_user_clicks_on_the_Assess_Batch_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getAssessBatchButton().click();
+	}
+
+	@Then("^The user should be on the Assess Batch page$")
+	public void the_user_should_be_on_the_Assess_Batch_page() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/assess"));
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/assess");
+	    driver.close();
+	}
+	
+	@When("^The user clicks on the Quality Audit button$")
+	public void the_user_clicks_on_the_Quality_Audit_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getQualityAuditButton().click();
+	}
+
+	@Then("^The user should be on the Quality Audit page$")
+	public void the_user_should_be_on_the_Quality_Audit_page() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/audit"));
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/audit");
+	    driver.close();
+	}
+	
+	@When("^The user clicks on the Panel button$")
+	public void the_user_clicks_on_the_Panel_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getPanelButton().click();
+	}
+
+	@Then("^The user should be on the Panel page$")
+	public void the_user_should_be_on_the_Panel_page() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/panels"));
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/panels");
+	    driver.close();
+	}
+	
+	@When("^The user clicks on the Reports button$")
+	public void the_user_clicks_on_the_Reports_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
+	    nav.getReportsButton().click();
+	}
+
+	@Then("^The user should be on the Reports page$")
+	public void the_user_should_be_on_the_Reports_page() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/reports"));
+		Assert.assertEquals(driver.getCurrentUrl(), "https://dev-caliber.revature.tech/caliber/#/vp/reports");
+	    driver.close();
 	}
 
 }
