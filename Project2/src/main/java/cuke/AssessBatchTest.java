@@ -58,9 +58,6 @@ public class AssessBatchTest {
 //		Assert.assertEquals(we, "\""+year+"\"");
 //		driver.close();
 //	}
-	
-	
-	
 	//-------------------------------------------------------------------
 	@Given("^the user is on the assess batch page$")
 	public void the_user_is_on_the_assess_batch_page() throws Throwable {
