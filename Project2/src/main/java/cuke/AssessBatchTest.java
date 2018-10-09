@@ -19,10 +19,10 @@ import cucumber.api.java.en.When;
 import pages.Login;
 
 public class AssessBatchTest {
-	
+
 	public static Login login;
 	public static WebDriver driver;
-	
+
 	@Given("^the user is on the assess batch page$")
 	public void the_user_is_on_the_assess_batch_page() throws Throwable {
 		File file = new File("src/main/resources/chromedriver.exe");
@@ -31,7 +31,7 @@ public class AssessBatchTest {
 		login = new Login(driver);
 		// go to website
 		driver.get("https://dev-caliber.revature.tech/");
-		//enter username and password
+		// enter username and password
 		login.getUsernameField().sendKeys("calibot@revature.com");
 		login.getPasswordField().sendKeys("*6Ak4-&kXnNTfTh6");
 		// login
@@ -56,13 +56,13 @@ public class AssessBatchTest {
 	public void the_user_clicks_on(String arg1) throws Throwable {
 		WebElement we = driver.findElement(By.linkText(arg1));
 		we.click();
-		
 	}
 
 	@Then("^the drop down menu's value changes to \"([^\"]*)\"$")
 	public void the_drop_down_menu_s_value_changes_to(String arg1) throws Throwable {
 		WebElement we = driver.findElement(By.linkText(arg1));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    
 	    Assert.assertEquals(we.getText(), arg1);
 	    driver.close();
 	}
@@ -91,7 +91,4 @@ public class AssessBatchTest {
 	    System.out.println("chose "+child.getText());
 	    driver.quit();
 	}
-
-	
-	
 }
