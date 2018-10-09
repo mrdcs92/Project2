@@ -7,12 +7,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@CucumberOptions(features = {"src/test/resources/LoginSuccess.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/LoginFailure.feature"}, glue = {"cuke"})
 
-
 //FOOTER
 // Needs to be fixed //@CucumberOptions(features = {"src/test/resources/footer.feature"}, glue = {"cuke"})
 
 //NAVBAR
-
 //@CucumberOptions(features = {"src/test/resources/NavBarHome.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/NavBarManageBatch.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/NavBarAssessBatch.feature"}, glue = {"cuke"})
@@ -30,6 +28,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //QUALITY AUDIT
 //@CucumberOptions(features = {"src/test/resources/QualityAuditYear.feature"}, glue = {"cuke"})
 
-public class NGCucumberRunner extends AbstractTestNGCucumberTests {
+//SETTINGS LOCATIONS
+@CucumberOptions(features = {"src/test/resources/SettingsLocationsChange.feature"}, glue = {"cuke"})
 
+public class NGCucumberRunner extends AbstractTestNGCucumberTests {	
 }
