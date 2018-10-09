@@ -10,6 +10,12 @@ Feature: Assessed Batch successful
 
     Examples: 
       | value |
-      |  2016 |
-      |  2017 |
       |  2019 |
+      |  2018 |
+      |  2017 |
+      |  2016 |
+
+  Scenario: 
+    When the user clicks on the trainor drop down menu
+    And the user clicks on any trainor
+    Then displayed trainor changes
