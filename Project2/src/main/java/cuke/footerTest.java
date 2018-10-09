@@ -1,7 +1,7 @@
 
 
 
-package cucumba;
+package cuke;
 
 import java.io.File;
 
@@ -25,7 +25,7 @@ public class footerTest {
 	public static WebDriver driver;
 	
 	@BeforeSuite
-	@Given("^the user is on the home page$")
+	@Given("^the user has logged in with username and password$")
 	public static void login() throws Throwable{
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
