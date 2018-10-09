@@ -29,22 +29,16 @@ public class AssessBatchTest {
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);
-		// go to website
 		driver.get("https://dev-caliber.revature.tech/");
-		// enter username and password
 		login.getUsernameField().sendKeys("calibot@revature.com");
 		login.getPasswordField().sendKeys("*6Ak4-&kXnNTfTh6");
-		// login
 		login.getLoginButton().click();
-		// go to assess batch
 		WebDriverWait wdw = new WebDriverWait(driver, 15);
 		wdw.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
 		WebElement we = driver.findElement(By.linkText("Assess Batch"));
 		we.click();
 	}
 	
-	//------------------------------------------------------------------------------------------------------
-
 	@When("^the user clicks on the year drop down menu$")
 	public void the_user_clicks_on_the_year_drop_down_menu() throws Throwable {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -66,7 +60,4 @@ public class AssessBatchTest {
 	    Assert.assertEquals(we.getText(), arg1);
 	    driver.close();
 	}
-	//-------------------------------------------------------------------------------------
-	
-	
 }
