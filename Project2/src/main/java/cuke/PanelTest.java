@@ -51,7 +51,7 @@ public class PanelTest {
 	public void the_Create_Panel_prompt_appears() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By)panel.getPanelModal()));
-	    driver.close();
+		driver.quit();
 	}
 	
 	@When("^The user clicks on the Search Bar$")
@@ -73,7 +73,7 @@ public class PanelTest {
 
 	@Then("^The search will execute$")
 	public void the_search_will_execute() throws Throwable {
-
+		driver.quit();
 	}
 
 }

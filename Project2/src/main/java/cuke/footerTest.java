@@ -38,7 +38,6 @@ public class footerTest {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
-
 		WebElement we = driver.findElement(By.xpath("/html/body/footer/div/div/div/div[2]/a[3]"));
 		we.click();
 	}
@@ -46,11 +45,6 @@ public class footerTest {
 	@Then("^the user is directed to the revature home page$")
 	public void revatureHomePage() throws Throwable {
 		Assert.assertEquals(driver.getCurrentUrl(), "https://revature.com/");
-	}
-
-	@AfterSuite
-	public static void closeDriver() {
-		driver.close();
 		driver.quit();
 	}
 

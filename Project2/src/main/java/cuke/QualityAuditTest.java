@@ -55,7 +55,7 @@ public class QualityAuditTest {
 	@Then("^The tag should change to \"([^\"]*)\"$")
 	public void the_tag_should_change_to(String arg1) throws Throwable {
 		Assert.assertEquals(qa.getYearDropdown().getText(), arg1);
-		driver.close();
+		driver.quit();
 	}
 
 }
