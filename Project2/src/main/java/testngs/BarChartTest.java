@@ -86,6 +86,14 @@ public class BarChartTest {
 		}
 	}
 	
+	@Test void checkFL() {
+		
+	}
+	
+	@Test void checkNY() {
+		
+	}
+	
 	@AfterSuite
 	public void cleanup() {
 		driver.quit();
