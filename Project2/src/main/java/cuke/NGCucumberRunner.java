@@ -10,6 +10,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //FOOTER
 //@CucumberOptions(features = {"src/test/resources/Footer.feature"}, glue = {"cuke"})
 
+
 //NAVBAR
 //@CucumberOptions(features = {"src/test/resources/NavBarHome.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/NavBarManageBatch.feature"}, glue = {"cuke"})

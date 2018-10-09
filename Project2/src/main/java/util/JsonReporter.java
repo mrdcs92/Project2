@@ -28,7 +28,7 @@ public class JsonReporter implements IReporter {
         }
         
         try {
-            BufferedWriter writer = new BufferedWriter( new FileWriter("../Project2/src/main/resources/dylanTest.json"));
+            BufferedWriter writer = new BufferedWriter( new FileWriter("D:/MyRepo/Project2/Project2/src/main/resources/dylanTest.json"));
         	Gson gson = new GsonBuilder().create();
         	String jsonString = gson.toJson(results);
         	writer.write(jsonString);
