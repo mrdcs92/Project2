@@ -49,7 +49,7 @@ public class AssessBatchTest {
 	public void the_user_clicks_on_the_year_drop_down_menu() throws Throwable {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement we = driver.findElement(By.linkText("2018"));
-		we.click();// assume button clicked
+		we.click();
 	}
 
 	@When("^the user clicks on \"([^\"]*)\"$")
@@ -68,27 +68,5 @@ public class AssessBatchTest {
 	}
 	//-------------------------------------------------------------------------------------
 	
-	@When("^the user clicks on the trainor drop down menu$")
-	public void the_user_clicks_on_the_trainor_drop_down_menu() throws Throwable {
-		// change drop down to 2017 on assess page
-		System.out.println("test0");
-		WebDriverWait wdw = new WebDriverWait(driver, 15);
-		System.out.println("test1");
-		wdw.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/assess"));
-		System.out.println("test2");
-		WebElement we = driver.findElement(By.linkText("2020"));
-		System.out.println("test3");
-		we.click();
-		we = driver.findElement(By.linkText("2017"));
-		we.click();
-		// click on the menu
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		WebElement parent, child;
-//		parent = driver.findElement(By.cssSelector("li [ng-show='!noBatches']"));
-		parent = driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div/div[2]/ul[1]/li[2]"));
-//	    parent = driver.findElement(By.cssSelector("li [role='button'] [class='dropdown'] [ng-show='!noBatches']"));
-		child = parent.findElement(By.cssSelector("a [class='dropdown-toggle ng-binding'] [data-toggle='dropdown'] [aria-expanded='false']"));
-	    System.out.println("chose "+child.getText());
-	    driver.quit();
-	}
+	
 }
