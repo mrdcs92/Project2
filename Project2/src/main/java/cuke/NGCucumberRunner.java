@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@CucumberOptions(features = {"src/test/resources/LoginFailure.feature"}, glue = {"cuke"})
 
 //FOOTER
-// Needs to be fixed //@CucumberOptions(features = {"src/test/resources/footer.feature"}, glue = {"cuke"})
+@CucumberOptions(features = {"src/test/resources/footer.feature"}, glue = {"cuke"})
 
 //NAVBAR
 //@CucumberOptions(features = {"src/test/resources/NavBarHome.feature"}, glue = {"cuke"})
@@ -18,8 +18,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@CucumberOptions(features = {"src/test/resources/NavBarPanel.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/NavBarReports.feature"}, glue = {"cuke"})
 
-//ASSESS BATCH
-//@CucumberOptions(features = {"src/test/resources/AssessBatchTest.feature"}, glue = {"cuke"})
 
 //PANEL
 // Broken Feature //@CucumberOptions(features = {"src/test/resources/PanelCreatePanel.feature"}, glue = {"cuke"})
