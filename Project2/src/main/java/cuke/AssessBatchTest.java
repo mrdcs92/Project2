@@ -65,14 +65,10 @@ public class AssessBatchTest {
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);
-		// go to website
 		driver.get("https://dev-caliber.revature.tech/");
-		//enter username and password
 		login.getUsernameField().sendKeys("calibot@revature.com");
 		login.getPasswordField().sendKeys("*6Ak4-&kXnNTfTh6");
-		// login
 		login.getLoginButton().click();
-		// go to assess batch
 		WebDriverWait wdw = new WebDriverWait(driver, 15);
 		wdw.until(ExpectedConditions.urlToBe("https://dev-caliber.revature.tech/caliber/#/vp/home"));
 		WebElement we = driver.findElement(By.linkText("Assess Batch"));
@@ -81,24 +77,18 @@ public class AssessBatchTest {
 
 	@When("^the user clicks on the year drop down menu$")
 	public void the_user_clicks_on_the_year_drop_down_menu() throws Throwable {
-//		WebElement we = driver.findElement(By.cssSelector("a [class='dropdown-toggle ng-binding'] [data-toggle='dropdown'] [aria-expanded='true']"));
-//		WebElement we = driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div/div[2]/ul[1]/li[1]/a"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement we = driver.findElement(By.linkText("2018"));
 		System.out.println(we.getText());
-		we.click();// assume button clicked
+		we.click();
 	}
 
 	@When("^the user clicks on \"([^\"]*)\"$")
 	public void the_user_clicks_on(String arg1) throws Throwable {
-//		WebElement we = driver.findElement(By.cssSelector("a [class='dropdown-toggle ng-binding'] [data-toggle='dropdown'] [aria-expanded='true']"));
-//		Select what = new Select(we);
-//		what.selectByVisibleText(arg1);
 		WebElement we = driver.findElement(By.linkText(arg1));
 		System.out.println("choose from drop down: "+we.getText()+" vs "+arg1);
 		
 		we.click();
-		
 	}
 
 	@Then("^the drop down menu's value changes to \"([^\"]*)\"$")
@@ -110,13 +100,4 @@ public class AssessBatchTest {
 
 	    Assert.assertEquals(we.getText(), arg1);
 	}
-
-	
-	@After
-	public void closeIt() {
-		driver.quit();
-	}
-	
-	
-	
 }

@@ -16,8 +16,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@CucumberOptions(features = {"src/test/resources/PanelCreatePanel.feature"}, glue = {"cuke"})
 //@CucumberOptions(features = {"src/test/resources/PanelSearchBar.feature"}, glue = {"cuke"})
 
-@CucumberOptions(features = {"src/test/resources/QualityAuditYear.feature"}, glue = {"cuke"})
+//@CucumberOptions(features = {"src/test/resources/QualityAuditYear.feature"}, glue = {"cuke"})
+
+@CucumberOptions(features = {"src/test/resources/SettingsLocationsChange.feature"}, glue = {"cuke"})
 
 public class NGCucumberRunner extends AbstractTestNGCucumberTests {
-
+	
 }
