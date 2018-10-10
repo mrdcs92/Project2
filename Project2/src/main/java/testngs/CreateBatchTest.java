@@ -21,7 +21,7 @@ public class CreateBatchTest {
 	
 	@BeforeSuite
 	public void setUpDriverAndPage() {
-		String dylandriver = PropertyParser.getProp("dylandriver");
+		String dylandriver = PropertyParser.getProp("ec2driver");
 		
 		File file = new File(dylandriver);
 		File testfile = new File(dylandriver);

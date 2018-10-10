@@ -19,7 +19,7 @@ public class ResultParser {
 	}
 	
 	public static JsonArray parseJson() throws IOException {
-		String jsonPath = PropertyParser.getProp("dylanjson");
+		String jsonPath = PropertyParser.getProp("ec2json");
 		BufferedReader br = new BufferedReader(new FileReader(jsonPath));
 		JsonParser parser = new JsonParser();
 		JsonArray array = parser.parse(br).getAsJsonArray();
