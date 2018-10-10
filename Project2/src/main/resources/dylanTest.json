@@ -1,1 +1,1 @@
-[{"name":"ManageBatch","passed":[{"name":"createBatch"}],"failed":[],"skipped":[]}]
+[{"name":"DavidTest","passed":[],"failed":[],"skipped":[{"name":"createTrainer"},{"name":"createTrainerButton"},{"name":"goToPage"},{"name":"modifyTrainer"}]}]

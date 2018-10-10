@@ -27,7 +27,7 @@ public class RequestHelper {
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 			
-			suiteFiles.add("D:/MyRepo/Project2/Project2/src/test/resources/testng.xml");
+			suiteFiles.add("C:\\Users\\David\\Desktop\\GitHubProjectpull\\Project2\\Project2\\src\\test\\resources\\testng.xml");
 			runner.setTestSuites(suiteFiles);
 			runner.run();
 			
