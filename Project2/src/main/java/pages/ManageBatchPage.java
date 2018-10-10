@@ -77,6 +77,15 @@ public class ManageBatchPage {
 		return driver.findElement(By.xpath("//*[@id=\"createBatchModal\"]/div/div/div[3]/button"));
 	}
 	
+	public WebElement getSaveButton() {
+		return driver.findElement(By.xpath("//*[@id=\"createBatchModal\"]/div/div/div[3]/input"));
+	}
+	
+	public WebElement getTrainingName() {
+	//	return driver.findElement(By.linkText("baddjava"));
+		return driver.findElement(By.xpath("//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr[1]/td[1]"));
+	}
+	
 	// Login Page methods
 	
 	public WebElement getUserName() {

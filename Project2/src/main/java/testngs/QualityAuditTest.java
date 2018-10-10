@@ -21,7 +21,7 @@ public class QualityAuditTest {
 	public static Login login;
 	public static NavBar nav;
 	public static QualityAudit qa;
-	
+
 	@BeforeSuite
 	public void setupDriverAndPage() {
 		File file = new File("src/main/resources/chromedriver.exe");
@@ -43,16 +43,16 @@ public class QualityAuditTest {
 	@Test
 	public void individualFeedback() {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		for(int i = 1; i <= 6; i++) {
+		for (int i = 1; i <= 6; i++) {
 			wait.until(ExpectedConditions.elementToBeClickable(qa.getTraineeFace(i)));
 			qa.getTraineeFace(i).click();
 		}
 	}
-	
+
 	@Test
 	public void notes() {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		for(int i = 1; i <= 6; i++) {
+		for (int i = 1; i <= 6; i++) {
 			wait.until(ExpectedConditions.elementToBeClickable(qa.getNotesTextField(i)));
 			qa.getNotesTextField(i).click();
 			wait.until(ExpectedConditions.elementToBeClickable(qa.getNotesTextField(i)));
@@ -62,27 +62,27 @@ public class QualityAuditTest {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
 	}
-	
+
 	@Test
 	public void overallFeedbackFaces() {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		for(int i = 1; i <= 3; i++) {
+		for (int i = 1; i <= 3; i++) {
 			wait.until(ExpectedConditions.elementToBeClickable(qa.getBatchFace(i)));
 			qa.getBatchFace(i).click();
 		}
 	}
-	
+
 	@Test
 	public void overallFeedbackTextField() {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.elementToBeClickable(qa.getFeedbackField()));
-			qa.getFeedbackField().click();
-			wait.until(ExpectedConditions.elementToBeClickable(qa.getFeedbackField()));
-			qa.getFeedbackField().click();
-			qa.getFeedbackField().clear();
-			qa.getFeedbackField().sendKeys("Test");
+		wait.until(ExpectedConditions.elementToBeClickable(qa.getFeedbackField()));
+		qa.getFeedbackField().click();
+		wait.until(ExpectedConditions.elementToBeClickable(qa.getFeedbackField()));
+		qa.getFeedbackField().click();
+		qa.getFeedbackField().clear();
+		qa.getFeedbackField().sendKeys("Test");
 	}
-	
+
 	@Test
 	public void save() {
 		qa.getSaveButton().click();

@@ -1,14 +1,11 @@
 package testngs;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -28,17 +25,10 @@ public class CreateBatchTest {
 		driver = new ChromeDriver();
 		mbPage = new ManageBatchPage(driver);
 		driver.get("https://dev-caliber.revature.tech/");
-		//driver.get("https://dev-caliber.revature.tech/caliber/#/vp/home");
-//		driver.findElement(By.name("username")).sendKeys("calibot@revature.com");
 		mbPage.getUserName().sendKeys("calibot@revature.com");
-//		driver.findElement(By.name("pw")).sendKeys("*6Ak4-&kXnNTfTh6");
 		mbPage.getPassword().sendKeys("*6Ak4-&kXnNTfTh6");
-//		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/form/div[3]/div/input")).click();
 		mbPage.getCredInput().click();
 		
-//		WebDriverWait batchWait = new WebDriverWait(driver, 20);
-//		WebElement navItem = batchWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Manage Batch")));
-//		navItem.click();
 		mbPage.getNavbarBatchLink().click();
 	}
 	
@@ -76,11 +66,14 @@ public class CreateBatchTest {
 		mbPage.getBorderLineGradeInput().clear();
 		mbPage.getBorderLineGradeInput().sendKeys("70");
 		
-		Assert.assertEquals(true, true);
+		mbPage.getSaveButton().click();
 		
-//		Thread.sleep(5000);
-//		mbPage.getCreateModalSave().click();
-//		Thread.sleep(5000);
+		driver.navigate().refresh();
+		
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		
+		Assert.assertEquals(mbPage.getTrainingName().getText(), "baddjava");
+		
 	}
 	
 	@AfterSuite
