@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ManageBatch">
+<suite name="DavidTest">
 	<!-- <test name="languages"> <parameter name="wikipedia" value="https://www.wikipedia.org/"></parameter> 
 		<classes> <class name="basictests.WikiLang"></class> </classes> </test> <test 
 		name="Search"> <classes> <class name="basictests.WikiSearch"></class> </classes> 
 		</test> -->
+
+	<test name="manage-batch">
+		<classes>
+			<class name="testngs.SettingsTrainersTest"></class>
+		</classes>
+	</test>
 	<listeners>
 		<listener class-name="util.Listener"></listener>
 		<listener class-name="util.JsonReporter"></listener>
 	</listeners>
-	<test name="manage-batch">
-		<classes>
-			<class name="testngs.CreateBatchTest"></class>
-		</classes>
-	</test>
 </suite>
