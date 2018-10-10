@@ -20,16 +20,8 @@ public class QualityAudit {
 		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[1]/div/div[1]/ul[1]/li[2]/a"));
 	}
 	
-	public WebElement getGreenFace() {
-		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[2]/div[2]/button[1]/i"));
-	}
-	
-	public WebElement getYellowFace() {
-		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[2]/div[2]/button[2]/i"));
-	}
-	
-	public WebElement getRedFace() {
-		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[2]/div[2]/button[3]/i"));
+	public WebElement getBatchFace(int num) {
+		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[2]/div[2]/button[" + num + "]/i"));
 	}
 	
 	public WebElement getFeedbackField() {
@@ -55,6 +47,18 @@ public class QualityAudit {
 			return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[1]/div/div[1]/ul[1]/li[1]/ul/li[1]/a"));
 		}
 		return null;
+	}
+	
+	public WebElement getTraineeFace(int num) {
+		return driver.findElement(By.xpath("//*[@id=\"qcTrainees\"]/div/ul/table/tbody/tr[" + num + "]/td[3]"));
+	}
+	
+	public WebElement getNotesTextField(int num) {
+		return driver.findElement(By.xpath("(//*[@id=\"noteTextArea\"])[" + num + "]"));
+	}
+	
+	public WebElement getWeekOne() {
+		return driver.findElement(By.xpath("/html/body/div/ui-view/ui-view/div[1]/div[1]/div/div[2]/ul/li[1]/a"));
 	}
 	
 }
