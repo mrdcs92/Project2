@@ -1,6 +1,7 @@
 package testngs;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,7 @@ public class CreateBatchTest {
 		mbPage.getUserName().sendKeys("calibot@revature.com");
 		mbPage.getPassword().sendKeys("*6Ak4-&kXnNTfTh6");
 		mbPage.getCredInput().click();
+    
 		mbPage.getNavbarBatchLink().click();
 	}
 	
@@ -70,11 +72,14 @@ public class CreateBatchTest {
 		mbPage.getBorderLineGradeInput().clear();
 		mbPage.getBorderLineGradeInput().sendKeys("70");
 		
-		Assert.assertEquals(true, true);
+		mbPage.getSaveButton().click();
 		
-//		Thread.sleep(5000);
-//		mbPage.getCreateModalSave().click();
-//		Thread.sleep(5000);
+		driver.navigate().refresh();
+		
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		
+		Assert.assertEquals(mbPage.getTrainingName().getText(), "baddjava");
+		
 	}
 	
 	@AfterSuite
