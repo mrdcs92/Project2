@@ -1,14 +1,10 @@
 package testngs;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -39,7 +35,7 @@ public class HomePageTest {
 		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/form/div[3]/div/input")).click();
 	}
 	
-	@Test(priority = 1)
+	@Test
 	void selectVA() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select")));	
@@ -51,7 +47,7 @@ public class HomePageTest {
 				"onBarCharAddressCityChange(selectedBarCity.address.city)");
 	}
 	
-	@Test(priority = 2)
+	@Test
 	void selectVA2() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select")));	
@@ -61,6 +57,102 @@ public class HomePageTest {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]")));
 		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]")).getAttribute("ng-model"),
 				"selectedLineCity");
+	}
+	
+	@Test(priority = 2)
+	void selectFL() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("FL");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Tampa");
+	}
+	
+	@Test(priority = 2)
+	void selectFL2() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("FL");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Tampa");
+	}
+	
+	@Test(priority = 3)
+	void selectNY() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("NY");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Queens");
+	}
+	
+	@Test(priority = 3)
+	void selectNY2() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("NY");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Queens");
+	}
+	
+	@Test(priority = 4)
+	void selectWV() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("WV");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Morgantown");
+	}
+	
+	@Test(priority = 4)
+	void selectWV2() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("WV");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[1]/option[2]")).getText(),
+				"Morgantown");
+	}
+	
+	@Test(priority = 5)
+	void selectAllStates() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("All States");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select/option[1]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select/option[1]")).getText(),
+				"All States");
+	}
+	
+	@Test(priority = 5)
+	void selectAllStates2() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));	
+		Select states = new Select(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[2]/div/div/div[1]/select[2]")));
+		states.selectByVisibleText("All States");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select/option[1]")));
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"home\"]/div[2]/div/div[1]/div/div/div[1]/select/option[1]")).getText(),
+				"All States");
 	}
 	
 	@AfterSuite

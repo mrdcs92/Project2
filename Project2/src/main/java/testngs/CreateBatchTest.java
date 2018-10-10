@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.ManageBatchPage;
+import util.PropertyParser;
 
 public class CreateBatchTest {
 
@@ -20,7 +21,12 @@ public class CreateBatchTest {
 	
 	@BeforeSuite
 	public void setUpDriverAndPage() {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		
+		File file = new File(dylandriver);
+		File testfile = new File(dylandriver);
+		System.out.println("absolute path: " + testfile.getAbsolutePath());
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		mbPage = new ManageBatchPage(driver);
@@ -28,7 +34,7 @@ public class CreateBatchTest {
 		mbPage.getUserName().sendKeys("calibot@revature.com");
 		mbPage.getPassword().sendKeys("*6Ak4-&kXnNTfTh6");
 		mbPage.getCredInput().click();
-		
+    
 		mbPage.getNavbarBatchLink().click();
 	}
 	
