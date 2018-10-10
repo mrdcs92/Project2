@@ -12,6 +12,7 @@ import org.testng.TestNG;
 
 import com.google.gson.JsonArray;
 
+import util.PropertyParser;
 import util.ResultParser;
 
 public class RequestHelper {
@@ -22,19 +23,20 @@ public class RequestHelper {
 		String uri = request.getRequestURI();
 
 		if (uri.equals("/Project2/getTests.do")) {
-			System.out.println("hello");
-			
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 			
-			suiteFiles.add("C:\\Users\\David\\Desktop\\GitHubProjectpull\\Project2\\Project2\\src\\test\\resources\\testng.xml");
+			String suitePath = PropertyParser.getProp("dylanxml");
+			
+			suiteFiles.add(suitePath);
 			runner.setTestSuites(suiteFiles);
 			runner.run();
 			
-			JsonArray testResults = ResultParser.parseJson();
+			String testResults = ResultParser.parseJson().toString();
 			
 			response.setContentType("application/json");
 			response.getWriter().print(testResults);
+//			response.getWriter().append(testResults);
 		}
 
 	}
