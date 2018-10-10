@@ -38,7 +38,7 @@ public class ResultParser {
 //		}
 //		
 //		return jsonString.toString();
-		BufferedReader br = new BufferedReader(new FileReader("D:/MyRepo/Project2/Project2/src/main/resources/dylanTest.json"));
+		BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\David\\Desktop\\GitHubProjectpull\\Project2\\Project2\\src\\main\\resources\\dylanTest.json"));
 		JsonParser parser = new JsonParser();
 		JsonArray array = parser.parse(br).getAsJsonArray();
 		return array;
