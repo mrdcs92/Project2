@@ -1,1 +1,1 @@
-[{"name":"ManageBatch","passed":[],"failed":[],"skipped":[{"name":"createBatch"}]}]
+[{"name":"ManageBatch","passed":[{"name":"createBatch"}],"failed":[],"skipped":[]}]
