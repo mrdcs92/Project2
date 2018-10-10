@@ -23,7 +23,7 @@ public class PropertyParser {
 			
 			Properties props = new Properties();
 			FileInputStream in;
-			in = new FileInputStream("D:/MyRepo/Project2/Project2/src/main/resources/connection.properties");
+			in = new FileInputStream("C:\\Users\\Administrator\\.jenkins\\workspace\\Project2\\Project2\\src\\main\\resources\\connection.properties");
 			props.load(in);
 			desiredProp += props.getProperty(myProp);
 			
