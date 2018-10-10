@@ -1,6 +1,10 @@
 package testngs;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -15,6 +19,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.ManageBatchPage;
+import util.PropertyParser;
 
 public class CreateBatchTest {
 
@@ -23,22 +28,19 @@ public class CreateBatchTest {
 	
 	@BeforeSuite
 	public void setUpDriverAndPage() {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		
+		File file = new File(dylandriver);
+		File testfile = new File(dylandriver);
+		System.out.println("absolute path: " + testfile.getAbsolutePath());
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		mbPage = new ManageBatchPage(driver);
 		driver.get("https://dev-caliber.revature.tech/");
-		//driver.get("https://dev-caliber.revature.tech/caliber/#/vp/home");
-//		driver.findElement(By.name("username")).sendKeys("calibot@revature.com");
 		mbPage.getUserName().sendKeys("calibot@revature.com");
-//		driver.findElement(By.name("pw")).sendKeys("*6Ak4-&kXnNTfTh6");
 		mbPage.getPassword().sendKeys("*6Ak4-&kXnNTfTh6");
-//		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/form/div[3]/div/input")).click();
 		mbPage.getCredInput().click();
-		
-//		WebDriverWait batchWait = new WebDriverWait(driver, 20);
-//		WebElement navItem = batchWait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Manage Batch")));
-//		navItem.click();
 		mbPage.getNavbarBatchLink().click();
 	}
 	

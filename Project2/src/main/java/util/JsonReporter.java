@@ -28,7 +28,8 @@ public class JsonReporter implements IReporter {
         }
         
         try {
-            BufferedWriter writer = new BufferedWriter( new FileWriter("C:\\Users\\David\\Desktop\\GitHubProjectpull\\Project2\\Project2\\src\\main\\resources\\dylanTest.json"));
+        	String reportJson = PropertyParser.getProp("dylanjson");      	
+            BufferedWriter writer = new BufferedWriter( new FileWriter(reportJson));
         	Gson gson = new GsonBuilder().create();
         	String jsonString = gson.toJson(results);
         	writer.write(jsonString);
@@ -54,19 +55,7 @@ public class JsonReporter implements IReporter {
 		result.addProperty("name", suite.getName());
 		result.add("passed", passedMethods);
 		result.add("failed", failedMethods);
-		result.add("skipped", skippedMethods);
-		
-//		suite.getResults().entrySet().forEach(element -> {
-//			ITestContext context = element.getValue().getTestContext();
-//			passedMethods.addAll(createResultJsonArray(context.getPassedTests().getAllResults()));
-//			failedMethods.addAll(createResultJsonArray(context.getFailedTests().getAllResults()));
-//			skippedMethods.addAll(createResultJsonArray(context.getSkippedTests().getAllResults()));
-//		});
-//		result.addProperty("name", suite.getName());
-//		result.add("passed", passedMethods);
-//		result.add("failed", failedMethods);
-//		result.add("skipped", skippedMethods);
-		
+		result.add("skipped", skippedMethods);	
 		return result;
 	}
 	
