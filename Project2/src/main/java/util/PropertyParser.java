@@ -23,10 +23,9 @@ public class PropertyParser {
 			
 			Properties props = new Properties();
 			FileInputStream in;
-			in = new FileInputStream("D:/MyRepo/Project2/Project2/src/main/resources/connection.properties");
+			in = new FileInputStream("C:\\Users\\brianrembecky\\Documents\\Project2\\Project2\\Project2\\src\\main\\resources\\chromedriver.exe");
 			props.load(in);
 			desiredProp += props.getProperty(myProp);
-			
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("resource not found bleh");
