@@ -23,6 +23,7 @@ public class RequestHelper {
 		String uri = request.getRequestURI();
 
 		if (uri.equals("/Project2/getNGTests.do")) {
+			System.out.println("HEY");
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 
