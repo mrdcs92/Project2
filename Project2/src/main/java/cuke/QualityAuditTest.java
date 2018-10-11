@@ -26,9 +26,8 @@ public class QualityAuditTest {
 
 	@Given("^The user is on the Quality Audit Page$")
 	public void the_user_is_on_the_Quality_Audit_Page() throws Throwable {
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		File file = new File(dylandriver);
-		//		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		nav = new NavBar(driver);

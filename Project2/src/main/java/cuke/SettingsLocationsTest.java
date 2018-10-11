@@ -25,9 +25,8 @@ public class SettingsLocationsTest {
 
 	@Given("^The user is on the Locations page$")
 	public void the_user_is_on_the_Locations_page() throws Throwable {
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		File file = new File(dylandriver);
-		//		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		settingsLocations = new SettingsLocations(driver);

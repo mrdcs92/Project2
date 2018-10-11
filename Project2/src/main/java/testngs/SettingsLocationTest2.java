@@ -12,13 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.Login;
 import pages.SettingsLocations;
+import util.PropertyParser;
 
 public class SettingsLocationTest2 {
 	public static SettingsLocations settingsLocations;
@@ -27,7 +26,9 @@ public class SettingsLocationTest2 {
 
 	@BeforeClass
 	public void the_user_is_on_the_Locations_page() throws Throwable {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		settingsLocations = new SettingsLocations(driver);

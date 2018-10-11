@@ -12,13 +12,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.Login;
 import pages.SettingsTrainers;
+import util.PropertyParser;
 
 public class SettingsTrainersTest {
 
@@ -28,7 +27,9 @@ public class SettingsTrainersTest {
 
 	@BeforeClass
 	public void setUpDriverAndPage() {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		settingsTrainers = new SettingsTrainers(driver);

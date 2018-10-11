@@ -10,9 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 
-import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -26,10 +24,8 @@ public class AssessBatchTest {
 
 	@Given("^the user is on the assess batch page$")
 	public void the_user_is_on_the_assess_batch_page() throws Throwable {
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		File file = new File(dylandriver);
-		
-		//File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);
@@ -42,7 +38,7 @@ public class AssessBatchTest {
 		WebElement we = driver.findElement(By.linkText("Assess Batch"));
 		we.click();
 	}
-	
+
 	@When("^the user clicks on the year drop down menu$")
 	public void the_user_clicks_on_the_year_drop_down_menu() throws Throwable {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -60,8 +56,8 @@ public class AssessBatchTest {
 	public void the_drop_down_menu_s_value_changes_to(String arg1) throws Throwable {
 		WebElement we = driver.findElement(By.linkText(arg1));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    
-	    Assert.assertEquals(we.getText(), arg1);
-	    driver.close();
+
+		Assert.assertEquals(we.getText(), arg1);
+		driver.close();
 	}
 }

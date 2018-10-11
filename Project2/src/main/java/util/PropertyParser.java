@@ -18,21 +18,17 @@ public class PropertyParser {
 	
 	public static String getProp(String myProp) {
 		String desiredProp = "";
-		
 		try {
 			
 			Properties props = new Properties();
 			FileInputStream in;
-			in = new FileInputStream("D:/MyRepo/Project2/Project2/src/main/resources/connection.properties");
+			in = new FileInputStream("C:\\Users\\Administrator\\.jenkins\\workspace\\Project2\\Project2\\src\\main\\resources\\connection.properties");
 			props.load(in);
-			desiredProp += props.getProperty(myProp);
-			
+			desiredProp += props.getProperty(myProp);	
 			
 		} catch (FileNotFoundException e) {
-			System.out.println("resource not found bleh");
 			e.printStackTrace();
 		} catch (IOException e) {
-			System.out.println("IO whatever bleh");
 			e.printStackTrace();
 		}
 		
