@@ -42,7 +42,7 @@ public class RequestHelper {
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 
-			String suitePath = PropertyParser.getProp("ec2cucxmml");
+			String suitePath = PropertyParser.getProp("ec2cucxml");
 
 			suiteFiles.add(suitePath);
 			runner.setTestSuites(suiteFiles);
