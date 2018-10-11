@@ -21,11 +21,8 @@ public class LoginTest {
 
 	@Given("^The user is on the Caliber Login Page$")
 	public void the_user_is_on_the_Caliber_Login_Page() throws Throwable {
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		
-		File file = new File(dylandriver);
-		System.out.println("welelwwelwlelwel");
-		//		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);

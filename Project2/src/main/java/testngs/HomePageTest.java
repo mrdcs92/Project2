@@ -11,15 +11,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.Login;
+import util.PropertyParser;
 
 public class HomePageTest {
 
@@ -29,7 +26,9 @@ public class HomePageTest {
 	
 	@BeforeClass
 	public void setUpDriverAndPage() {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		homePage = new HomePage(driver);

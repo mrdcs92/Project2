@@ -22,34 +22,34 @@ public class RequestHelper {
 
 		String uri = request.getRequestURI();
 
-		if (uri.equals("/Project2/getTests.do")) {
+		if (uri.equals("/Project2/getNGTests.do")) {
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
-			
-			//String suitePath = PropertyParser.getProp("ec2xml");
-			
-			//suiteFiles.add(suitePath);
-			//runner.setTestSuites(suiteFiles);
-			//runner.run();
-			
-			JsonArray testResults = ResultParser.parseJson();
-			
-			response.setContentType("application/json");
-			response.getWriter().print(testResults);
-		}
-		
-		if (uri.equals("/Project2/getCukeTests.do")) {
-			TestNG runner = new TestNG();
-			List<String> suiteFiles = new ArrayList<String>();
-			
-			String suitePath = PropertyParser.getProp("ec2cucxmml");
-			
+
+			String suitePath = PropertyParser.getProp("ec2xml");
+
 			suiteFiles.add(suitePath);
 			runner.setTestSuites(suiteFiles);
 			runner.run();
-			
+
+			JsonArray testResults = ResultParser.parseJson();
+
+			response.setContentType("application/json");
+			response.getWriter().print(testResults);
+		}
+
+		if (uri.equals("/Project2/getCukeTests.do")) {
+			TestNG runner = new TestNG();
+			List<String> suiteFiles = new ArrayList<String>();
+
+			String suitePath = PropertyParser.getProp("ec2cucxmml");
+
+			suiteFiles.add(suitePath);
+			runner.setTestSuites(suiteFiles);
+			runner.run();
+
 			JsonArray testResults = ResultParser.parseCukeJson();
-			
+
 			response.setContentType("application/json");
 			response.getWriter().print(testResults);
 		}

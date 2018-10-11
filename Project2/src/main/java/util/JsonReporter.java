@@ -28,7 +28,7 @@ public class JsonReporter implements IReporter {
         }
         
         try {
-        	String reportJson = PropertyParser.getProp("dylanjson");      	
+        	String reportJson = PropertyParser.getProp("ec2json");      	
             BufferedWriter writer = new BufferedWriter( new FileWriter(reportJson));
         	Gson gson = new GsonBuilder().create();
         	String jsonString = gson.toJson(results);

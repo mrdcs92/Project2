@@ -24,9 +24,9 @@ public class ManageBatchTest {
 
 	@BeforeSuite
 	public void setUpDriverAndPage() {
-		// String userdriver = PropertyParser.getProp("dylandriver");
-		// File file = new File(userdriver);
-		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
+
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		mbPage = new ManageBatchPage(driver);
@@ -86,7 +86,8 @@ public class ManageBatchTest {
 		mbPage.getDeleteButton().click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"deleteBatchModal\"]/div/div/div[3]/input")));
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//*[@id=\"deleteBatchModal\"]/div/div/div[3]/input")));
 		mbPage.getConfirmDeleteButton().click();
 		driver.navigate().refresh();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);

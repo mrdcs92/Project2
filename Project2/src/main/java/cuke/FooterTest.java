@@ -24,9 +24,8 @@ public class FooterTest {
 
 	@Given("^the user has logged in with username and password$")
 	public static void the_user_has_logged_in_with_username_and_password() throws Throwable{
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		File file = new File(dylandriver);
-		//		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);

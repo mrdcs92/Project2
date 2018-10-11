@@ -1,7 +1,6 @@
 package testngs;
 
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,13 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pages.ReportPage;
+import util.PropertyParser;
 
 public class ReportsPageTest {
 
@@ -25,7 +22,9 @@ public class ReportsPageTest {
 	
 	@BeforeClass
 	public void setUpDriverAndPage() {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		reportPage = new ReportPage(driver);

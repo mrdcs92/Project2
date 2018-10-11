@@ -26,9 +26,8 @@ public class PanelTest {
 	
 	@Given("^The user is on the Panel page$")
 	public void the_user_is_on_the_Panel_page() throws Throwable {
-		String dylandriver = PropertyParser.getProp("dylandriver");
-		File file = new File(dylandriver);
-		//		File file = new File("src/main/resources/chromedriver.exe");
+		String userDriver = PropertyParser.getProp("ec2driver");
+		File file = new File(userDriver);
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		nav = new NavBar(driver);
