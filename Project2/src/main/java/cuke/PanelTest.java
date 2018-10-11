@@ -15,6 +15,7 @@ import cucumber.api.java.en.When;
 import pages.Login;
 import pages.NavBar;
 import pages.Panel;
+import util.PropertyParser;
 
 public class PanelTest {
 	
@@ -25,7 +26,9 @@ public class PanelTest {
 	
 	@Given("^The user is on the Panel page$")
 	public void the_user_is_on_the_Panel_page() throws Throwable {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		File file = new File(dylandriver);
+		//		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		nav = new NavBar(driver);

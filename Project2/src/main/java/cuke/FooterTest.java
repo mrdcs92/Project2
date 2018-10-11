@@ -15,6 +15,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.Login;
+import util.PropertyParser;
 
 public class FooterTest {
 
@@ -23,7 +24,9 @@ public class FooterTest {
 
 	@Given("^the user has logged in with username and password$")
 	public static void the_user_has_logged_in_with_username_and_password() throws Throwable{
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		File file = new File(dylandriver);
+		//		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);

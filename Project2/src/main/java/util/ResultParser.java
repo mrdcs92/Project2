@@ -19,7 +19,15 @@ public class ResultParser {
 	}
 	
 	public static JsonArray parseJson() throws IOException {
-		String jsonPath = PropertyParser.getProp("ec2json");
+		String jsonPath = PropertyParser.getProp("dylanjson");
+		BufferedReader br = new BufferedReader(new FileReader(jsonPath));
+		JsonParser parser = new JsonParser();
+		JsonArray array = parser.parse(br).getAsJsonArray();
+		return array;
+	}
+	
+	public static JsonArray parseCukeJson() throws IOException {
+		String jsonPath = PropertyParser.getProp("ec2cukejson");
 		BufferedReader br = new BufferedReader(new FileReader(jsonPath));
 		JsonParser parser = new JsonParser();
 		JsonArray array = parser.parse(br).getAsJsonArray();

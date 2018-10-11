@@ -12,6 +12,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.Login;
+import util.PropertyParser;
 
 public class LoginTest {
 
@@ -20,7 +21,11 @@ public class LoginTest {
 
 	@Given("^The user is on the Caliber Login Page$")
 	public void the_user_is_on_the_Caliber_Login_Page() throws Throwable {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		
+		File file = new File(dylandriver);
+		System.out.println("welelwwelwlelwel");
+		//		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);

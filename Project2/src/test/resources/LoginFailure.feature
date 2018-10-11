@@ -1,3 +1,4 @@
+@LoginFailure
 Feature: Login Failure
 
   Background: 

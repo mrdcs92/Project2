@@ -1,3 +1,4 @@
+@NavBarReports
 Feature: NavBar - Reports
 
   Scenario: 

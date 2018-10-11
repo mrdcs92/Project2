@@ -7,7 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -22,7 +26,7 @@ public class QualityAuditTest {
 	public static NavBar nav;
 	public static QualityAudit qa;
 
-	@BeforeSuite
+	@BeforeClass
 	public void setupDriverAndPage() {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
@@ -88,7 +92,7 @@ public class QualityAuditTest {
 		qa.getSaveButton().click();
 	}
 
-	@AfterSuite
+	@AfterClass
 	public void quitDriver() {
 		driver.quit();
 	}

@@ -1,3 +1,4 @@
+@SettingsLocationsChange
 Feature: Settings-Locations Changing Location
 
   Scenario: Modifying Location

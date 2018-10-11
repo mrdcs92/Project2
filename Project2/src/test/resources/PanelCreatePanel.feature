@@ -1,3 +1,4 @@
+@PanelCreatePanel
 Feature: Panel - Create Panel
 
   Scenario: 

@@ -1,3 +1,4 @@
+@PanelSearchBar
 Feature: Panel - Search Bar
 
   Scenario Outline: 

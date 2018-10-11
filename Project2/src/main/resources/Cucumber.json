@@ -1,0 +1,1878 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11866117235,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the assess batch page",
+            "match": {
+              "location": "AssessBatchTest.the_user_is_on_the_assess_batch_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "",
+        "description": "",
+        "id": "assessed-batch-successful;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 403082465,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks on the year drop down menu",
+            "match": {
+              "location": "AssessBatchTest.the_user_clicks_on_the_year_drop_down_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190529260,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks on \"2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2016",
+                  "offset": 20
+                }
+              ],
+              "location": "AssessBatchTest.the_user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179558247,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the drop down menu\u0027s value changes to \"2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2016",
+                  "offset": 39
+                }
+              ],
+              "location": "AssessBatchTest.the_drop_down_menu_s_value_changes_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AssessBatch"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9444343372,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the assess batch page",
+            "match": {
+              "location": "AssessBatchTest.the_user_is_on_the_assess_batch_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "assessed-batch-successful;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 247995522,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks on the year drop down menu",
+            "match": {
+              "location": "AssessBatchTest.the_user_clicks_on_the_year_drop_down_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197665396,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks on \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 20
+                }
+              ],
+              "location": "AssessBatchTest.the_user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170704068,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the drop down menu\u0027s value changes to \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 39
+                }
+              ],
+              "location": "AssessBatchTest.the_drop_down_menu_s_value_changes_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AssessBatch"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9240088542,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the assess batch page",
+            "match": {
+              "location": "AssessBatchTest.the_user_is_on_the_assess_batch_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "",
+        "description": "",
+        "id": "assessed-batch-successful;;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 268770189,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks on the year drop down menu",
+            "match": {
+              "location": "AssessBatchTest.the_user_clicks_on_the_year_drop_down_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196118020,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks on \"2019\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2019",
+                  "offset": 20
+                }
+              ],
+              "location": "AssessBatchTest.the_user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2353887271,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the drop down menu\u0027s value changes to \"2019\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2019",
+                  "offset": 39
+                }
+              ],
+              "location": "AssessBatchTest.the_drop_down_menu_s_value_changes_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AssessBatch"
+          }
+        ]
+      }
+    ],
+    "name": "Assessed Batch successful",
+    "description": "",
+    "id": "assessed-batch-successful",
+    "keyword": "Feature",
+    "uri": "AssessBatch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AssessBatch"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6710679855,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user has logged in with username and password",
+            "match": {
+              "location": "FooterTest.the_user_has_logged_in_with_username_and_password()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "id": "footer-successful;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 82165690,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks revature",
+            "match": {
+              "location": "FooterTest.the_user_clicks_revature()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2892114865,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is directed to the revature home page",
+            "match": {
+              "location": "FooterTest.the_user_is_directed_to_the_revature_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "footer successful",
+    "description": "",
+    "id": "footer-successful",
+    "keyword": "Feature",
+    "uri": "Footer.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Footer"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3481438309,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 56363756,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51664738,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61643610,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 711537739,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3708914026,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87615072,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77500804,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"*6Ak4-\u0026kXnNTfTh6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "*6Ak4-\u0026kXnNTfTh6",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79157408,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 710131448,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3541086827,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 98380148,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"calibot@revature.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "calibot@revature.com",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49331726,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62827467,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 698093200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3556029250,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91793557,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61837600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 840728314,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 699337358,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3457154739,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102402188,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"calibot@revature.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "calibot@revature.com",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63831554,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 914216748,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 695082643,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3787917266,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "User Fails to Log In",
+        "description": "",
+        "id": "login-failure;user-fails-to-log-in;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 90509576,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 87516085,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"*6Ak4-\u0026kXnNTfTh6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "*6Ak4-\u0026kXnNTfTh6",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 913944820,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 734919622,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginFailure"
+          }
+        ]
+      }
+    ],
+    "name": "Login Failure",
+    "description": "",
+    "id": "login-failure",
+    "keyword": "Feature",
+    "uri": "LoginFailure.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginFailure"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3530826356,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Caliber Login Page",
+            "match": {
+              "location": "LoginTest.the_user_is_on_the_Caliber_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User Succeeds to Log In",
+        "description": "",
+        "id": "login-success;user-succeeds-to-log-in;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 97795899,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user types in username \"calibot@revature.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "calibot@revature.com",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82406330,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user types in password \"*6Ak4-\u0026kXnNTfTh6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "*6Ak4-\u0026kXnNTfTh6",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.the_user_types_in_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2885324045,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the login button",
+            "match": {
+              "location": "LoginTest.the_user_clicks_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2717077574,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The URL of the page is \"https://dev-caliber.revature.tech/caliber/#/vp/home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dev-caliber.revature.tech/caliber/#/vp/home",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginTest.the_url_of_the_page_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@LoginSuccess"
+          }
+        ]
+      }
+    ],
+    "name": "Login Success",
+    "description": "",
+    "id": "login-success",
+    "keyword": "Feature",
+    "uri": "LoginSuccess.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginSuccess"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---assess-batch;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7301990996,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2741910691,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Assess Batch button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Assess_Batch_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200816469,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Assess Batch page",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_Assess_Batch_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Assess Batch",
+    "description": "",
+    "id": "navbar---assess-batch",
+    "keyword": "Feature",
+    "uri": "NavBarAssessBatch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarAssessBatch"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---home;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6637621500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10220527883,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be \"https://dev-caliber.revature.tech/caliber/#/vp/home\". Current url: \"https://dev-caliber.revature.tech/caliber/\" (tried for 10 second(s) with 500 MILLISECONDS interval)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027LAPTOP-FIONSAGV\u0027, ip: \u0027172.16.103.187\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\\Users\\mrdcs\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49707}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 81383ed493ce0b546c9fb13400d88a52\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat cuke.NavBarTest.the_user_clicks_on_the_Home_button(NavBarTest.java:42)\r\n\tat ✽.When The user clicks on the Home button(NavBarHome.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Home button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Home_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "The user should be on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Home",
+    "description": "",
+    "id": "navbar---home",
+    "keyword": "Feature",
+    "uri": "NavBarHome.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarHome"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---manage-batch;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6660305356,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2379162415,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Manage Batch button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Manage_Batch_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1246453834,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Manage Batch page",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_Manage_Batch_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Manage Batch",
+    "description": "",
+    "id": "navbar---manage-batch",
+    "keyword": "Feature",
+    "uri": "NavBarManageBatch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarManageBatch"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---panel;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6240948132,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3337373579,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Panel button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Panel_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1206704463,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Panel page",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_Panel_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Panel",
+    "description": "",
+    "id": "navbar---panel",
+    "keyword": "Feature",
+    "uri": "NavBarPanel.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarPanel"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---quality-audit;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6673362484,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2817026147,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Quality Audit button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Quality_Audit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200400042,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Quality Audit page",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_Quality_Audit_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Quality Audit",
+    "description": "",
+    "id": "navbar---quality-audit",
+    "keyword": "Feature",
+    "uri": "NavBarQualityAudit.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarQualityAudit"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "navbar---reports;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6314882576,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the homepage",
+            "match": {
+              "location": "NavBarTest.the_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2118834530,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the Reports button",
+            "match": {
+              "location": "NavBarTest.the_user_clicks_on_the_Reports_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1232200904,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user should be on the Reports page",
+            "match": {
+              "location": "NavBarTest.the_user_should_be_on_the_Reports_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavBar - Reports",
+    "description": "",
+    "id": "navbar---reports",
+    "keyword": "Feature",
+    "uri": "NavBarReports.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavBarReports"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8563832123,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Quality Audit Page",
+            "match": {
+              "location": "QualityAuditTest.the_user_is_on_the_Quality_Audit_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "User changes the year",
+        "description": "",
+        "id": "quality-audit---year-dropdown;user-changes-the-year;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 574921465,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks the Year tab",
+            "match": {
+              "location": "QualityAuditTest.the_user_clicks_the_Year_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163150368,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks on a \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 22
+                }
+              ],
+              "location": "QualityAuditTest.the_user_clicks_on_a(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 774663304,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The tag should change to \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 26
+                }
+              ],
+              "location": "QualityAuditTest.the_tag_should_change_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@QualityAuditYear"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8833502293,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Quality Audit Page",
+            "match": {
+              "location": "QualityAuditTest.the_user_is_on_the_Quality_Audit_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User changes the year",
+        "description": "",
+        "id": "quality-audit---year-dropdown;user-changes-the-year;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 575838513,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks the Year tab",
+            "match": {
+              "location": "QualityAuditTest.the_user_clicks_the_Year_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186495841,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user clicks on a \"2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2018",
+                  "offset": 22
+                }
+              ],
+              "location": "QualityAuditTest.the_user_clicks_on_a(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729345653,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The tag should change to \"2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2018",
+                  "offset": 26
+                }
+              ],
+              "location": "QualityAuditTest.the_tag_should_change_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@QualityAuditYear"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17223667578,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be \"https://dev-caliber.revature.tech/caliber/#/vp/home\". Current url: \"https://dev-caliber.revature.tech/caliber/\" (tried for 10 second(s) with 500 MILLISECONDS interval)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027LAPTOP-FIONSAGV\u0027, ip: \u0027172.16.103.187\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\\Users\\mrdcs\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50123}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: 73fb53d0a28f6cf816ea012946e0224d\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat cuke.QualityAuditTest.the_user_is_on_the_Quality_Audit_Page(QualityAuditTest.java:42)\r\n\tat ✽.Given The user is on the Quality Audit Page(QualityAuditYear.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "The user is on the Quality Audit Page",
+            "match": {
+              "location": "QualityAuditTest.the_user_is_on_the_Quality_Audit_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "User changes the year",
+        "description": "",
+        "id": "quality-audit---year-dropdown;user-changes-the-year;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user clicks the Year tab",
+            "match": {
+              "location": "QualityAuditTest.the_user_clicks_the_Year_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user clicks on a \"2019\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2019",
+                  "offset": 22
+                }
+              ],
+              "location": "QualityAuditTest.the_user_clicks_on_a(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The tag should change to \"2019\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2019",
+                  "offset": 26
+                }
+              ],
+              "location": "QualityAuditTest.the_tag_should_change_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@QualityAuditYear"
+          }
+        ]
+      }
+    ],
+    "name": "Quality Audit - Year Dropdown",
+    "description": "",
+    "id": "quality-audit---year-dropdown",
+    "keyword": "Feature",
+    "uri": "QualityAuditYear.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@QualityAuditYear"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Modifying Location",
+        "description": "",
+        "id": "settings-locations-changing-location;modifying-location",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10274253703,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user is on the Locations page",
+            "match": {
+              "location": "SettingsLocationsTest.the_user_is_on_the_Locations_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1898337366,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks on the modify data",
+            "match": {
+              "location": "SettingsLocationsTest.the_user_clicks_on_the_modify_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3082891591,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The data should change",
+            "match": {
+              "location": "SettingsLocationsTest.the_data_should_change()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Settings-Locations Changing Location",
+    "description": "",
+    "id": "settings-locations-changing-location",
+    "keyword": "Feature",
+    "uri": "SettingsLocationsChange.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SettingsLocationsChange"
+      }
+    ]
+  }
+]

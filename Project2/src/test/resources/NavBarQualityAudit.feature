@@ -1,3 +1,4 @@
+@NavBarQualityAudit
 Feature: NavBar - Quality Audit
 
   Scenario: 
