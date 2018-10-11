@@ -3,7 +3,7 @@
 <suite name="TestNGTests">
 	<test name="manage-batch">
 		<classes>
-			<class name="testngs.CreateBatchTest"></class>
+			<class name="testngs.ManageBatchTest"></class>
 		</classes>
 	</test>
 	<test name="home-page">
