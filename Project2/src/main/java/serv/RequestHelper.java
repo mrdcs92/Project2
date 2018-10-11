@@ -26,11 +26,11 @@ public class RequestHelper {
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 			
-			String suitePath = PropertyParser.getProp("dylanxml");
+			//String suitePath = PropertyParser.getProp("ec2xml");
 			
-			suiteFiles.add(suitePath);
-			runner.setTestSuites(suiteFiles);
-			runner.run();
+			//suiteFiles.add(suitePath);
+			//runner.setTestSuites(suiteFiles);
+			//runner.run();
 			
 			JsonArray testResults = ResultParser.parseJson();
 			
