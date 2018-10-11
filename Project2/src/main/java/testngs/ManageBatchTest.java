@@ -10,8 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.ManageBatchPage;
@@ -22,7 +22,7 @@ public class ManageBatchTest {
 	public static ManageBatchPage mbPage;
 	public static WebDriver driver;
 
-	@BeforeSuite
+	@BeforeClass
 	public void setUpDriverAndPage() {
 		String userDriver = PropertyParser.getProp("ec2driver");
 		File file = new File(userDriver);
@@ -94,7 +94,7 @@ public class ManageBatchTest {
 		Assert.assertNotEquals(mbPage.getTrainingName().getText(), "baddjava");
 	}
 
-	@AfterSuite
+	@AfterClass
 	public void cleanup() {
 		driver.quit();
 	}
