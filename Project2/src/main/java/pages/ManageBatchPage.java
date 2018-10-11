@@ -30,7 +30,6 @@ public class ManageBatchPage {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement webEle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("trainingName")));
 		return webEle;
-		//return driver.findElement(By.id("trainingName"));
 	}
 	
 	public WebElement getTrainTypeInput() {
@@ -82,8 +81,15 @@ public class ManageBatchPage {
 	}
 	
 	public WebElement getTrainingName() {
-	//	return driver.findElement(By.linkText("baddjava"));
 		return driver.findElement(By.xpath("//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr[1]/td[1]"));
+	}
+	
+	public WebElement getDeleteButton() {
+		return driver.findElement(By.xpath("//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr[1]/td[13]/a"));
+	}
+	
+	public WebElement getConfirmDeleteButton() {
+		return driver.findElement(By.xpath("//*[@id=\"deleteBatchModal\"]/div/div/div[3]/input"));
 	}
 	
 	// Login Page methods
