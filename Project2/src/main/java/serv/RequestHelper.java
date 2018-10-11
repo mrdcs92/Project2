@@ -26,16 +26,16 @@ public class RequestHelper {
 			TestNG runner = new TestNG();
 			List<String> suiteFiles = new ArrayList<String>();
 			
-			String suitePath = PropertyParser.getProp("ec2xml");
+			//String suitePath = PropertyParser.getProp("ec2xml");
 			
-			suiteFiles.add(suitePath);
-			runner.setTestSuites(suiteFiles);
-			runner.run();
+			//suiteFiles.add(suitePath);
+			//runner.setTestSuites(suiteFiles);
+			//runner.run();
 			
-			String testResults = ResultParser.parseJson().toString();
+			//String testResults = ResultParser.parseJson().toString();
 			
 			response.setContentType("application/json");
-			response.getWriter().print(testResults);
+			//response.getWriter().print(testResults);
 //			response.getWriter().append(testResults);
 		}
 
