@@ -1,3 +1,4 @@
+@NavBarHome
 Feature: NavBar - Home
 
   Scenario: 

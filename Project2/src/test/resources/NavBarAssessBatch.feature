@@ -1,3 +1,4 @@
+@NavBarAssessBatch
 Feature: NavBar - Assess Batch
 
   Scenario: 

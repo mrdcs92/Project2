@@ -16,6 +16,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.SettingsLocations;
+import util.PropertyParser;
 
 public class SettingsLocationsTest {
 
@@ -24,7 +25,9 @@ public class SettingsLocationsTest {
 
 	@Given("^The user is on the Locations page$")
 	public void the_user_is_on_the_Locations_page() throws Throwable {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		File file = new File(dylandriver);
+		//		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		settingsLocations = new SettingsLocations(driver);

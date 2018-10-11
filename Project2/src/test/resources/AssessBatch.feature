@@ -1,3 +1,4 @@
+@AssessBatch
 Feature: Assessed Batch successful
 
   Background: 

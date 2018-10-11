@@ -1,3 +1,4 @@
+@QualityAuditYear
 Feature: Quality Audit - Year Dropdown
 
   Background: 

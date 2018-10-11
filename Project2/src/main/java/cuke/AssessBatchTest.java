@@ -17,6 +17,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.Login;
+import util.PropertyParser;
 
 public class AssessBatchTest {
 
@@ -25,7 +26,10 @@ public class AssessBatchTest {
 
 	@Given("^the user is on the assess batch page$")
 	public void the_user_is_on_the_assess_batch_page() throws Throwable {
-		File file = new File("src/main/resources/chromedriver.exe");
+		String dylandriver = PropertyParser.getProp("dylandriver");
+		File file = new File(dylandriver);
+		
+		//File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		login = new Login(driver);

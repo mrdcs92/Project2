@@ -3,32 +3,11 @@ package cuke;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-//LOGIN
-//@CucumberOptions(features = {"src/test/resources/LoginSuccess.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/LoginFailure.feature"}, glue = {"cuke"})
-
-//FOOTER
-//@CucumberOptions(features = {"src/test/resources/Footer.feature"}, glue = {"cuke"})
-
-
-//NAVBAR
-//@CucumberOptions(features = {"src/test/resources/NavBarHome.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/NavBarManageBatch.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/NavBarAssessBatch.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/NavBarQualityAudit.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/NavBarPanel.feature"}, glue = {"cuke"})
-//@CucumberOptions(features = {"src/test/resources/NavBarReports.feature"}, glue = {"cuke"})
-
-
-//PANEL
-// Broken Feature //@CucumberOptions(features = {"src/test/resources/PanelCreatePanel.feature"}, glue = {"cuke"})
-// Broken Feature - Will Lock-Up Browser //@CucumberOptions(features = {"src/test/resources/PanelSearchBar.feature"}, glue = {"cuke"})
-
-//QUALITY AUDIT
-//@CucumberOptions(features = {"src/test/resources/QualityAuditYear.feature"}, glue = {"cuke"})
-
-//SETTINGS LOCATIONS
-@CucumberOptions(features = {"src/test/resources/SettingsLocationsChange.feature"}, glue = {"cuke"})
+@CucumberOptions(features = {"C:\\Users\\Administrator\\.jenkins\\workspace\\Project2\\Project2\\src\\test\\resources"},
+tags = "@AssessBatch, @Footer, @LoginFailure, @LoginSuccess, @NavBarAssessBatch, @NavBarHome, @NavBarManageBatch, @NavBarPanel, @NavBarQualityAudit, @NavBarReports, @QualityAuditYear, @SettingsLocationsChange",
+glue = {"cuke"},
+plugin = {"pretty", "C:\\Users\\Administrator\\.jenkins\\workspace\\Project2\\Project2\\src\\main\\resources\\Cucumber.json"},
+monochrome = true)
 
 public class NGCucumberRunner extends AbstractTestNGCucumberTests {	
 }

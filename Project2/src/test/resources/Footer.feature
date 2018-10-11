@@ -1,3 +1,4 @@
+@Footer
 Feature: footer successful
 	
 	Background:

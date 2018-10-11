@@ -32,11 +32,26 @@ public class RequestHelper {
 			//runner.setTestSuites(suiteFiles);
 			//runner.run();
 			
-			//String testResults = ResultParser.parseJson().toString();
+			JsonArray testResults = ResultParser.parseJson();
 			
 			response.setContentType("application/json");
-			//response.getWriter().print(testResults);
-//			response.getWriter().append(testResults);
+			response.getWriter().print(testResults);
+		}
+		
+		if (uri.equals("/Project2/getCukeTests.do")) {
+			TestNG runner = new TestNG();
+			List<String> suiteFiles = new ArrayList<String>();
+			
+			String suitePath = PropertyParser.getProp("ec2cucxmml");
+			
+			suiteFiles.add(suitePath);
+			runner.setTestSuites(suiteFiles);
+			runner.run();
+			
+			JsonArray testResults = ResultParser.parseCukeJson();
+			
+			response.setContentType("application/json");
+			response.getWriter().print(testResults);
 		}
 
 	}

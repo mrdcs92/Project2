@@ -11,7 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,7 @@ public class SettingsTrainersTest {
 	public static Login login;
 	public static WebDriver driver;
 
-	@BeforeSuite
+	@BeforeClass
 	public void setUpDriverAndPage() {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
@@ -133,7 +135,7 @@ public class SettingsTrainersTest {
 	//	public void deleteTrainer() {
 	//	}
 
-	@AfterSuite
+	@AfterClass
 	public void cleanup() {
 		driver.quit();
 	}

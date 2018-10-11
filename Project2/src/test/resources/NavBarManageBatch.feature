@@ -1,3 +1,4 @@
+@NavBarManageBatch
 Feature: NavBar - Manage Batch
 
   Scenario: 
