@@ -66,15 +66,15 @@ public class RequestHelper {
 	        
 	        try {
 	            myProcess.waitFor();
-	            System.out.println("After for");
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 	        
-	        BufferedReader buf = new BufferedReader(new InputStreamReader(myProcess.getInputStream())); // gets protractor output
-	        String str = "", data = "";
+	        BufferedReader buf = new BufferedReader(new InputStreamReader(myProcess.getInputStream()));
+	        String str = "";
+	        String data = "";
 	        while ((str = buf.readLine()) != null) {
-	            data += str + "\n"; // puts in a formatted string
+	            data += str + "\n";
 	        }
 	        System.out.println(data);
 	        response.getWriter().append(data);
