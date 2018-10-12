@@ -1,6 +1,8 @@
 package serv;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,6 +55,33 @@ public class RequestHelper {
 
 			response.setContentType("application/json");
 			response.getWriter().print(testResults);
+		}
+		
+		if (uri.equals("/Project2/getProtractorTests.do")) {
+			
+			String cmd = "cmd /c chdir C:\\Users\\Administrator\\Desktop\\CaliburWebApp\\CaliberTest\\tests & "
+	                + "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\protractor conf.js";
+	        Runtime run = Runtime.getRuntime();
+	        Process myProcess = run.exec(cmd);
+	        
+	        try {
+	            myProcess.waitFor();
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	        
+	        BufferedReader buf = new BufferedReader(new InputStreamReader(myProcess.getInputStream()));
+	        String str = "";
+	        String data = "";
+	        while ((str = buf.readLine()) != null) {
+	            data += str + "\n";
+	        }
+	        System.out.println(data);
+	        response.getWriter().append(data);
+	        
+	        buf.close();
+	        myProcess.destroy();
+			
 		}
 
 	}
